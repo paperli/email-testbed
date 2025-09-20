@@ -106,7 +106,7 @@
         background-color:#FFEC37;
         border:0;
         border-radius:99999px;
-        color:#00001F;
+        color:#00001F !important;
         display:inline-block;
         font-family:'Gilroy', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
         font-size:18px;
@@ -127,10 +127,10 @@
       .bg-card     { background:#151530; }  /* main card */
       .bg-footer   { background:#151530; }  /* footer background */
       .border-subtle{ border-top:1px solid #2A2A4A; }
-      .text-primary{ color:#FFFFFF; }
-      .text-secondary { color:#9A9AB1; }
-      .text-muted  { color:#B5B5B5; }
-      .link-brand  { color:#FFEC37; }       /* brand yellow */
+      .text-primary{ color:#FFFFFF !important; }
+      .text-secondary { color:#9A9AB1 !important; }
+      .text-muted  { color:#B5B5B5 !important; }
+      .link-brand  { color:#FFEC37 !important; }       /* brand yellow */
 
       /* Typography */
       .font-base {
@@ -151,6 +151,14 @@
       .h5 {
         font-family:'Gilroy', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
         font-weight:600; font-size:18px; line-height:1.2; margin:0;
+      }
+      .title {
+        font-family:'Gilroy', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+        font-weight:500; font-size:20px; line-height:1.3; margin:0;
+      }
+      .subtitle {
+        font-family:'Gilroy', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+        font-weight:500; font-size:18px; line-height:1.2; margin:0;
       }
       .body-copy {
         font-family:'Gilroy', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
@@ -236,6 +244,7 @@
         font-weight:600; font-size:18px; line-height:1.2;
         text-decoration: none;
         line-height: 48px;
+        color: #FFEC37 !important;
       }
       .divider { color:#7A7A7A; padding:0 10px; }
       .social td { padding-right:16px; }
