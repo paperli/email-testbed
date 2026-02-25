@@ -130,6 +130,12 @@
         width: 100%;
       }
 
+      /* ========== DECORATIONS ========== */
+      .deco {
+        position: absolute;
+        pointer-events: none;
+      }
+
       /* ========== RESPONSIVE ========== */
       @media screen and (max-width: 600px) {
         .stack {
@@ -144,12 +150,41 @@
           width: 280px !important;
           height: auto !important;
         }
+        .deco {
+          display: none !important;
+        }
       }
     </style>
   </head>
   <body style="margin: 0; padding: 0; background-color: #ececdb">
-    <!-- WRAPPER -->
-    <table
+    <div style="position: relative; overflow: hidden">
+      <!-- Decorative background elements -->
+      <img
+        class="deco"
+        alt=""
+        src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/spring_pink_minus25.png"
+        style="position: absolute; left: 50%; margin-left: -340px; top: -34px; pointer-events: none; transform: scale(0.5); transform-origin: left top"
+      />
+      <img
+        class="deco"
+        alt=""
+        src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/spring_pink_161.png"
+        style="position: absolute; left: 50%; margin-left: 235px; top: 178px; pointer-events: none; transform: scale(0.5); transform-origin: left top"
+      />
+      <img
+        class="deco"
+        alt=""
+        src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/spring_pink_65.png"
+        style="position: absolute; left: 50%; margin-left: -380px; top: 1136px; pointer-events: none; transform: scale(0.5); transform-origin: left top"
+      />
+      <img
+        class="deco"
+        alt=""
+        src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/spring_pink_minus44.png"
+        style="position: absolute; left: 50%; margin-left: 148px; top: 1720px; pointer-events: none; transform: scale(0.5); transform-origin: left top"
+      />
+      <!-- WRAPPER -->
+      <table
       cellpadding="0"
       cellspacing="0"
       role="presentation"
@@ -648,5 +683,6 @@
       </tr>
     </table>
     <!-- /WRAPPER -->
+    </div>
   </body>
 </html>
