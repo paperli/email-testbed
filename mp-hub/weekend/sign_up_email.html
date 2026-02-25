@@ -130,13 +130,6 @@
         width: 100%;
       }
 
-      /* ========== DECORATIONS ========== */
-      .deco {
-        position: absolute;
-        pointer-events: none;
-        z-index: 1;
-      }
-
       /* ========== RESPONSIVE ========== */
       @media screen and (max-width: 600px) {
         .stack {
@@ -151,67 +144,28 @@
           width: 280px !important;
           height: auto !important;
         }
-        .deco-tl {
-          margin-left: -270px !important;
-        }
-        .deco-tr {
-          margin-left: 100px !important;
-        }
-        .deco-bl {
-          margin-left: -300px !important;
-        }
-        .deco-br {
-          margin-left: 80px !important;
+        .platform-tile {
+          padding-left: 8px !important;
+          padding-right: 8px !important;
         }
       }
     </style>
   </head>
   <body style="margin: 0; padding: 0; background-color: #ececdb">
-    <div style="
-      position: relative;
+    <div class="bg-wrapper" style="
       overflow: hidden;
       background-color: #ececdb;
-      background-image: url('https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/gradient_top.png'), url('https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/gradient_bottom.png');
+      background-image: url('https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/gradient_top_with_decor.png'), url('https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/gradient_bottom_with_decor.png');
       background-position: center top, center bottom;
       background-repeat: no-repeat, no-repeat;
-      background-size: 100% 476px, 100% 253px;
+      background-size: auto 512px, auto 956px;
     ">
-      <!-- Decorative background elements (layer 1)
-           Wrapped in max-height:0 to hide in Gmail (which strips position:absolute).
-           Absolutely positioned images escape the wrapper in supporting clients. -->
-      <div style="max-height: 0; overflow: hidden; font-size: 0; line-height: 0">
-        <img
-          class="deco deco-tl"
-          alt=""
-          src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/spring_pink_minus25.png"
-          style="position: absolute; left: 50%; margin-left: -340px; top: -34px; pointer-events: none; transform: scale(0.5); transform-origin: left top"
-        />
-        <img
-          class="deco deco-tr"
-          alt=""
-          src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/spring_pink_161.png"
-          style="position: absolute; left: 50%; margin-left: 235px; top: 178px; pointer-events: none; transform: scale(0.5); transform-origin: left top"
-        />
-        <img
-          class="deco deco-bl"
-          alt=""
-          src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/spring_pink_65.png"
-          style="position: absolute; left: 50%; margin-left: -380px; top: 1136px; pointer-events: none; transform: scale(0.5); transform-origin: left top"
-        />
-        <img
-          class="deco deco-br"
-          alt=""
-          src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/spring_pink_minus44.png"
-          style="position: absolute; left: 50%; margin-left: 148px; top: 1720px; pointer-events: none; transform: scale(0.5); transform-origin: left top"
-        />
-      </div>
       <!-- WRAPPER -->
       <table
       cellpadding="0"
       cellspacing="0"
       role="presentation"
       width="100%"
-      style="position: relative; z-index: 2"
     >
       <!-- ===== TOP GRADIENT SECTION ===== -->
       <tr>
@@ -459,7 +413,7 @@
                 >
                   <tr>
                     <!-- Roku -->
-                    <td align="center" style="padding: 0 16px" valign="top">
+                    <td class="platform-tile" align="center" style="padding: 0 16px" valign="top">
                       <a class="platform-link" href="https://www.weekend.com/platforms/roku" style="text-decoration: none">
                         <img
                           alt="Roku"
@@ -491,7 +445,7 @@
                       </a>
                     </td>
                     <!-- LG -->
-                    <td align="center" style="padding: 0 16px" valign="top">
+                    <td class="platform-tile" align="center" style="padding: 0 16px" valign="top">
                       <a class="platform-link" href="https://www.weekend.com/platforms/lg-tv" style="text-decoration: none">
                         <img
                           alt="LG"
@@ -523,7 +477,7 @@
                       </a>
                     </td>
                     <!-- Fire TV -->
-                    <td align="center" style="padding: 0 16px" valign="top">
+                    <td class="platform-tile" align="center" style="padding: 0 16px" valign="top">
                       <a class="platform-link" href="https://www.weekend.com/platforms/fire-tv" style="text-decoration: none">
                         <img
                           alt="Fire TV"
@@ -555,7 +509,7 @@
                       </a>
                     </td>
                     <!-- Samsung -->
-                    <td align="center" style="padding: 0 16px" valign="top">
+                    <td class="platform-tile" align="center" style="padding: 0 16px" valign="top">
                       <a class="platform-link" href="https://www.weekend.com/platforms/samsung-tv" style="text-decoration: none">
                         <img
                           alt="Samsung"
