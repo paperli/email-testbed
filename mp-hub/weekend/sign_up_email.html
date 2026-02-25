@@ -87,10 +87,10 @@
         text-decoration: underline;
       }
       .platform-link:hover p {
-        color: #2b2856 !important;
+        color: #5a4fa0 !important;
       }
       .platform-link:active p {
-        color: #4a4178 !important;
+        color: #7b6fc4 !important;
       }
 
       /* ========== BUTTONS ========== */
@@ -118,10 +118,10 @@
         mso-line-height-rule: exactly;
       }
       .support-button:hover {
-        background-color: #2b2856 !important;
+        background-color: #5a4fa0 !important;
       }
       .support-button:active {
-        background-color: #4a4178 !important;
+        background-color: #7b6fc4 !important;
       }
 
       /* ========== LAYOUT ========== */
@@ -134,6 +134,7 @@
       .deco {
         position: absolute;
         pointer-events: none;
+        z-index: 1;
       }
 
       /* ========== RESPONSIVE ========== */
@@ -150,35 +151,55 @@
           width: 280px !important;
           height: auto !important;
         }
-        .deco {
-          display: none !important;
+        .deco-tl {
+          margin-left: -270px !important;
+        }
+        .deco-tr {
+          margin-left: 100px !important;
+        }
+        .deco-bl {
+          margin-left: -300px !important;
+        }
+        .deco-br {
+          margin-left: 80px !important;
         }
       }
     </style>
   </head>
   <body style="margin: 0; padding: 0; background-color: #ececdb">
-    <div style="position: relative; overflow: hidden">
-      <!-- Decorative background elements -->
+    <div style="position: relative; overflow: hidden; background-color: #ececdb">
+      <!-- Gradient backgrounds (layer 0) -->
       <img
-        class="deco"
+        alt=""
+        src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/gradient_top.png"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 476px; z-index: 0; pointer-events: none"
+      />
+      <img
+        alt=""
+        src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/gradient_bottom.png"
+        style="position: absolute; bottom: 0; left: 0; width: 100%; height: 253px; z-index: 0; pointer-events: none"
+      />
+      <!-- Decorative background elements (layer 1) -->
+      <img
+        class="deco deco-tl"
         alt=""
         src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/spring_pink_minus25.png"
         style="position: absolute; left: 50%; margin-left: -340px; top: -34px; pointer-events: none; transform: scale(0.5); transform-origin: left top"
       />
       <img
-        class="deco"
+        class="deco deco-tr"
         alt=""
         src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/spring_pink_161.png"
         style="position: absolute; left: 50%; margin-left: 235px; top: 178px; pointer-events: none; transform: scale(0.5); transform-origin: left top"
       />
       <img
-        class="deco"
+        class="deco deco-bl"
         alt=""
         src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/spring_pink_65.png"
         style="position: absolute; left: 50%; margin-left: -380px; top: 1136px; pointer-events: none; transform: scale(0.5); transform-origin: left top"
       />
       <img
-        class="deco"
+        class="deco deco-br"
         alt=""
         src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/spring_pink_minus44.png"
         style="position: absolute; left: 50%; margin-left: 148px; top: 1720px; pointer-events: none; transform: scale(0.5); transform-origin: left top"
@@ -189,19 +210,11 @@
       cellspacing="0"
       role="presentation"
       width="100%"
-      style="background-color: #ececdb"
+      style="position: relative; z-index: 2"
     >
       <!-- ===== TOP GRADIENT SECTION ===== -->
       <tr>
-        <td
-          style="
-            background-color: #ececdb;
-            background-image: url('https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/gradient_top.png');
-            background-position: center top;
-            background-repeat: no-repeat;
-            background-size: auto 476px;
-          "
-        >
+        <td>
           <table
             align="center"
             cellpadding="0"
@@ -582,15 +595,7 @@
 
       <!-- ===== BOTTOM GRADIENT SECTION (footer) ===== -->
       <tr>
-        <td
-          style="
-            background-color: #ececdb;
-            background-image: url('https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/gradient_bottom.png');
-            background-position: center bottom;
-            background-repeat: no-repeat;
-            background-size: auto 253px;
-          "
-        >
+        <td>
           <table
             align="center"
             cellpadding="0"
