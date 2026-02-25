@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="ie=edge" http-equiv="x-ua-compatible" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta charset="utf-8" />
+    <title>Welcome to Weekend</title>
+    <style>
+      /* WeekendRepro Regular (400) */
+      @font-face {
+        font-family: "WeekendRepro";
+        font-style: normal;
+        font-weight: 400;
+        src:
+          url("https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/fonts/Weekend+Repro/WeekendRepro-Regular.woff2")
+            format("woff2"),
+          url("https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/fonts/Weekend+Repro/WeekendRepro-Regular.woff")
+            format("woff");
+      }
+
+      /* WeekendRepro Medium (500) */
+      @font-face {
+        font-family: "WeekendRepro";
+        font-style: normal;
+        font-weight: 500;
+        src:
+          url("https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/fonts/Weekend+Repro/WeekendRepro-Medium.woff2")
+            format("woff2"),
+          url("https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/fonts/Weekend+Repro/WeekendRepro-Medium.woff")
+            format("woff");
+      }
+
+      /* WeekendRepro Bold (700) */
+      @font-face {
+        font-family: "WeekendRepro";
+        font-style: normal;
+        font-weight: 700;
+        src:
+          url("https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/fonts/Weekend+Repro/WeekendRepro-Bold.woff2")
+            format("woff2"),
+          url("https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/fonts/Weekend+Repro/WeekendRepro-Bold.woff")
+            format("woff");
+      }
+
+      /* ========== CLIENT RESETS ========== */
+      html,
+      body {
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        border-collapse: collapse !important;
+      }
+      img {
+        border: 0;
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+        display: block;
+      }
+      a {
+        text-decoration: underline;
+      }
+
+      /* ========== THEME TOKENS ========== */
+      .bg-page {
+        background-color: #ececdb;
+      }
+      .text-primary {
+        color: #0a0322 !important;
+      }
+
+      /* ========== INTERACTIVE STATES ========== */
+      .platform-link {
+        text-decoration: none;
+      }
+      .platform-link p {
+        text-decoration: underline;
+      }
+      .platform-link:hover p {
+        color: #2b2856 !important;
+      }
+      .platform-link:active p {
+        color: #4a4178 !important;
+      }
+
+      /* ========== BUTTONS ========== */
+      .support-button {
+        background-color: #0a0322;
+        border: 0;
+        border-radius: 99999px;
+        color: #f3f4f1 !important;
+        display: inline-block;
+        font-family:
+          "WeekendRepro",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Arial,
+          sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 48px;
+        text-align: center;
+        text-decoration: none;
+        padding: 0 32px;
+        margin: 0;
+        mso-line-height-rule: exactly;
+      }
+      .support-button:hover {
+        background-color: #2b2856 !important;
+      }
+      .support-button:active {
+        background-color: #4a4178 !important;
+      }
+
+      /* ========== LAYOUT ========== */
+      .container {
+        max-width: 600px;
+        width: 100%;
+      }
+
+      /* ========== RESPONSIVE ========== */
+      @media screen and (max-width: 600px) {
+        .stack {
+          display: block !important;
+          width: 100% !important;
+        }
+        .mobile-pad {
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+        }
+        .mobile-logo img {
+          width: 280px !important;
+          height: auto !important;
+        }
+      }
+    </style>
+  </head>
+  <body style="margin: 0; padding: 0; background-color: #ececdb">
+    <!-- WRAPPER -->
+    <table
+      cellpadding="0"
+      cellspacing="0"
+      role="presentation"
+      width="100%"
+      style="background-color: #ececdb"
+    >
+      <!-- ===== TOP GRADIENT SECTION ===== -->
+      <tr>
+        <td
+          style="
+            background-color: #ececdb;
+            background-image: url('https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/gradient_top.png');
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: auto 476px;
+          "
+        >
+          <table
+            align="center"
+            cellpadding="0"
+            cellspacing="0"
+            class="container"
+            role="presentation"
+          >
+            <!-- Header: "Welcome to" -->
+            <tr>
+              <td
+                align="center"
+                class="mobile-pad"
+                style="padding: 48px 24px 12px"
+              >
+                <p
+                  style="
+                    font-family: 'WeekendRepro', -apple-system,
+                      BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 1.3;
+                    color: #0a0322;
+                    margin: 0;
+                  "
+                >
+                  Welcome to
+                </p>
+              </td>
+            </tr>
+            <!-- Header: Weekend Logo -->
+            <tr>
+              <td
+                align="center"
+                class="mobile-pad mobile-logo"
+                style="padding: 0 24px 40px"
+              >
+                <img
+                  alt="Weekend"
+                  src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/weekend-dneal.png"
+                  width="416"
+                  height="101"
+                  style="width: 416px; max-width: 100%; height: auto"
+                />
+              </td>
+            </tr>
+            <!-- Main Block: H1 -->
+            <tr>
+              <td
+                align="center"
+                class="mobile-pad"
+                style="padding: 0 24px 8px"
+              >
+                <h1
+                  style="
+                    font-family: 'WeekendRepro', -apple-system,
+                      BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+                    font-weight: 500;
+                    font-size: 48px;
+                    line-height: 1.2;
+                    color: #0a0322;
+                    margin: 0;
+                  "
+                >
+                  READY TO PLAY?
+                </h1>
+              </td>
+            </tr>
+            <!-- Main Block: Subline -->
+            <tr>
+              <td
+                align="center"
+                class="mobile-pad"
+                style="padding: 0 24px 24px"
+              >
+                <p
+                  style="
+                    font-family: 'WeekendRepro', -apple-system,
+                      BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 1.3;
+                    color: #0a0322;
+                    margin: 0;
+                  "
+                >
+                  Here's how to find us on your TV.
+                </p>
+              </td>
+            </tr>
+            <!-- Main Block: Hero Image -->
+            <tr>
+              <td align="center" class="mobile-pad" style="padding: 0 24px 24px">
+                <img
+                  alt="Find Weekend on your TV"
+                  src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/remote_with_notes.png"
+                  width="515"
+                  height="610"
+                  style="width: 100%; max-width: 515px; height: auto"
+                />
+              </td>
+            </tr>
+            <!-- Main Block: Paragraph 1 -->
+            <tr>
+              <td
+                align="center"
+                class="mobile-pad"
+                style="padding: 0 24px 32px"
+              >
+                <p
+                  style="
+                    font-family: 'WeekendRepro', -apple-system,
+                      BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 1.1;
+                    color: #0a0322;
+                    margin: 0;
+                    text-align: center;
+                  "
+                >
+                  Voice-powered Jeopardy!, Wheel of Fortune, CoComelon, Song
+                  Quiz, and more are waiting on your biggest screen.
+                </p>
+              </td>
+            </tr>
+            <!-- Main Block: Paragraph 2 -->
+            <tr>
+              <td
+                align="center"
+                class="mobile-pad"
+                style="padding: 0 24px 48px"
+              >
+                <p
+                  style="
+                    font-family: 'WeekendRepro', -apple-system,
+                      BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 1.1;
+                    color: #0a0322;
+                    margin: 0;
+                    text-align: center;
+                  "
+                >
+                  Find Weekend on your TV, sign up for your free 7-day trial,
+                  and let everyone play. No controllers. No setup. Just voices.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- ===== MIDDLE SECTION (solid background) ===== -->
+      <tr>
+        <td>
+          <table
+            align="center"
+            cellpadding="0"
+            cellspacing="0"
+            class="container"
+            role="presentation"
+          >
+            <!-- 2nd Block: H2 -->
+            <tr>
+              <td
+                align="center"
+                class="mobile-pad"
+                style="padding: 48px 24px 16px"
+              >
+                <h2
+                  style="
+                    font-family: 'WeekendRepro', -apple-system,
+                      BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+                    font-weight: 500;
+                    font-size: 42px;
+                    line-height: 1.2;
+                    color: #0a0322;
+                    margin: 0;
+                  "
+                >
+                  Ready, Set, Weekend.
+                </h2>
+              </td>
+            </tr>
+            <!-- 2nd Block: Paragraph 1 -->
+            <tr>
+              <td
+                align="center"
+                class="mobile-pad"
+                style="padding: 0 24px 32px"
+              >
+                <p
+                  style="
+                    font-family: 'WeekendRepro', -apple-system,
+                      BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 1.1;
+                    color: #0a0322;
+                    margin: 0;
+                    text-align: center;
+                  "
+                >
+                  Find us on your TV and start your free 7-day trial. Pick your
+                  platform below.
+                </p>
+              </td>
+            </tr>
+            <!-- 2nd Block: Paragraph 2 -->
+            <tr>
+              <td
+                align="center"
+                class="mobile-pad"
+                style="padding: 0 24px 32px"
+              >
+                <p
+                  style="
+                    font-family: 'WeekendRepro', -apple-system,
+                      BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 1.1;
+                    color: #0a0322;
+                    margin: 0;
+                    text-align: center;
+                  "
+                >
+                  Cancel anytime.
+                </p>
+              </td>
+            </tr>
+            <!-- Platform Tiles -->
+            <tr>
+              <td align="center" class="mobile-pad" style="padding: 0 24px 48px">
+                <table
+                  cellpadding="0"
+                  cellspacing="0"
+                  role="presentation"
+                  align="center"
+                >
+                  <tr>
+                    <!-- Roku -->
+                    <td align="center" style="padding: 0 16px" valign="top">
+                      <a class="platform-link" href="https://www.weekend.com/platforms/roku" style="text-decoration: none">
+                        <img
+                          alt="Roku"
+                          src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/platform_tile_roku.png"
+                          width="60"
+                          height="60"
+                          style="
+                            width: 60px;
+                            height: 60px;
+                            display: block;
+                            margin: 0 auto;
+                          "
+                        />
+                        <p
+                          style="
+                            font-family: 'WeekendRepro', -apple-system,
+                              BlinkMacSystemFont, 'Segoe UI', Roboto, Arial,
+                              sans-serif;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 1.3;
+                            color: #0a0322;
+                            margin: 8px 0 0;
+                            text-align: center;
+                          "
+                        >
+                          Roku
+                        </p>
+                      </a>
+                    </td>
+                    <!-- LG -->
+                    <td align="center" style="padding: 0 16px" valign="top">
+                      <a class="platform-link" href="https://www.weekend.com/platforms/lg-tv" style="text-decoration: none">
+                        <img
+                          alt="LG"
+                          src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/platform_tile_lg.png"
+                          width="60"
+                          height="60"
+                          style="
+                            width: 60px;
+                            height: 60px;
+                            display: block;
+                            margin: 0 auto;
+                          "
+                        />
+                        <p
+                          style="
+                            font-family: 'WeekendRepro', -apple-system,
+                              BlinkMacSystemFont, 'Segoe UI', Roboto, Arial,
+                              sans-serif;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 1.3;
+                            color: #0a0322;
+                            margin: 8px 0 0;
+                            text-align: center;
+                          "
+                        >
+                          LG
+                        </p>
+                      </a>
+                    </td>
+                    <!-- Fire TV -->
+                    <td align="center" style="padding: 0 16px" valign="top">
+                      <a class="platform-link" href="https://www.weekend.com/platforms/fire-tv" style="text-decoration: none">
+                        <img
+                          alt="Fire TV"
+                          src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/platform_tile_firetv.png"
+                          width="60"
+                          height="60"
+                          style="
+                            width: 60px;
+                            height: 60px;
+                            display: block;
+                            margin: 0 auto;
+                          "
+                        />
+                        <p
+                          style="
+                            font-family: 'WeekendRepro', -apple-system,
+                              BlinkMacSystemFont, 'Segoe UI', Roboto, Arial,
+                              sans-serif;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 1.3;
+                            color: #0a0322;
+                            margin: 8px 0 0;
+                            text-align: center;
+                          "
+                        >
+                          Fire TV
+                        </p>
+                      </a>
+                    </td>
+                    <!-- Samsung -->
+                    <td align="center" style="padding: 0 16px" valign="top">
+                      <a class="platform-link" href="https://www.weekend.com/platforms/samsung-tv" style="text-decoration: none">
+                        <img
+                          alt="Samsung"
+                          src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/platform_tile_samsung.png"
+                          width="60"
+                          height="60"
+                          style="
+                            width: 60px;
+                            height: 60px;
+                            display: block;
+                            margin: 0 auto;
+                          "
+                        />
+                        <p
+                          style="
+                            font-family: 'WeekendRepro', -apple-system,
+                              BlinkMacSystemFont, 'Segoe UI', Roboto, Arial,
+                              sans-serif;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 1.3;
+                            color: #0a0322;
+                            margin: 8px 0 0;
+                            text-align: center;
+                          "
+                        >
+                          Samsung
+                        </p>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- ===== BOTTOM GRADIENT SECTION (footer) ===== -->
+      <tr>
+        <td
+          style="
+            background-color: #ececdb;
+            background-image: url('https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/gradient_bottom.png');
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            background-size: auto 253px;
+          "
+        >
+          <table
+            align="center"
+            cellpadding="0"
+            cellspacing="0"
+            class="container"
+            role="presentation"
+          >
+            <!-- W Logo -->
+            <tr>
+              <td align="center" style="padding: 48px 24px 24px">
+                <a
+                  href="https://www.weekend.com"
+                  style="text-decoration: none"
+                >
+                  <img
+                    alt="Weekend"
+                    src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/icon_w.png"
+                    width="60"
+                    height="60"
+                    style="width: 60px; height: 60px"
+                  />
+                </a>
+              </td>
+            </tr>
+            <!-- Support text -->
+            <tr>
+              <td align="center" style="padding: 0 24px 12px">
+                <p
+                  style="
+                    font-family: 'WeekendRepro', -apple-system,
+                      BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 1.44;
+                    color: #0a0322;
+                    margin: 0;
+                  "
+                >
+                  Questions? We've got you.
+                </p>
+              </td>
+            </tr>
+            <!-- Support button -->
+            <tr>
+              <td align="center" style="padding: 0 24px 32px">
+                <a
+                  class="support-button"
+                  href="https://www.weekend.com/support"
+                  style="
+                    background-color: #0a0322;
+                    border: 0;
+                    border-radius: 99999px;
+                    color: #f3f4f1;
+                    display: inline-block;
+                    font-family: 'WeekendRepro', -apple-system,
+                      BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 36px;
+                    text-align: center;
+                    text-decoration: none;
+                    padding: 0 24px;
+                    mso-line-height-rule: exactly;
+                  "
+                >
+                  Support
+                </a>
+              </td>
+            </tr>
+            <!-- Unsubscribe -->
+            <tr>
+              <td align="center" style="padding: 0 24px 48px">
+                <p
+                  style="
+                    font-family: 'WeekendRepro', -apple-system,
+                      BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 1.44;
+                    color: #0a0322;
+                    margin: 0;
+                  "
+                >
+                  {% unsubscribe %} from our email list
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- /WRAPPER -->
+  </body>
+</html>
