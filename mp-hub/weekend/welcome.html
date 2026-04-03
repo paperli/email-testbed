@@ -4,6 +4,8 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible" />
     <meta content="width=device-width,initial-scale=1" name="viewport" />
     <meta charset="utf-8" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
     <title>Welcome to Weekend 🎮</title>
     <style>
       /* WeekendRepro Regular (400) */
@@ -41,6 +43,11 @@
           url("https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/fonts/Weekend+Repro/WeekendRepro-Bold.woff")
             format("woff");
       }
+      /* ========== DARK MODE SUPPORT ========== */
+      :root {
+        color-scheme: light dark;
+      }
+
       /* ========== CLIENT RESETS (safe to reuse) ========== */
       html,
       body {
@@ -546,7 +553,7 @@
       }
     </style>
   </head>
-  <body class="bg-page" style="margin: 0; padding: 0">
+  <body class="bg-page" style="margin: 0; padding: 0; background-color: #0A0322">
     <!-- WRAPPER (left-aligned) -->
     <table
       cellpadding="0"
@@ -554,6 +561,7 @@
       class="bg-page"
       role="presentation"
       width="100%"
+      style="background-color: #0A0322"
     >
       <tr>
         <td class="wrapper-pad">
@@ -785,7 +793,7 @@
                           <td>
                             <a
                               aria-label="Instagram"
-                              href="https://www.instagram.com/weekendhq"
+                              href="https://www.instagram.com/weekend.hq"
                             >
                               <img
                                 alt="Instagram"
@@ -821,7 +829,7 @@
                           <td style="padding-right: 0">
                             <a
                               aria-label="YouTube"
-                              href="https://www.youtube.com/weekend_hq"
+                              href="https://www.youtube.com/@weekend_hq"
                             >
                               <img
                                 alt="YouTube"
