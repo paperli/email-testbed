@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">  
+  <head>    
+    <meta content="ie=edge" http-equiv="x-ua-compatible"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <meta charset="utf-8"/>
+    <title>
+      Millions of game nights can&rsquo;t be wrong
+    </title>
+    <style>
+      @font-face {
+        font-family: "WeekendRepro"; font-style: normal; font-weight: 400;
+        src: url("https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/fonts/Weekend+Repro/WeekendRepro-Regular.woff2") format("woff2"),
+             url("https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/fonts/Weekend+Repro/WeekendRepro-Regular.woff") format("woff");
+      }
+      @font-face {
+        font-family: "WeekendRepro"; font-style: normal; font-weight: 500;
+        src: url("https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/fonts/Weekend+Repro/WeekendRepro-Medium.woff2") format("woff2"),
+             url("https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/fonts/Weekend+Repro/WeekendRepro-Medium.woff") format("woff");
+      }
+      @font-face {
+        font-family: "WeekendRepro"; font-style: normal; font-weight: 700;
+        src: url("https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/fonts/Weekend+Repro/WeekendRepro-Bold.woff2") format("woff2"),
+             url("https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/fonts/Weekend+Repro/WeekendRepro-Bold.woff") format("woff");
+      }
+      html, body { margin: 0 !important; padding: 0 !important; height: 100% !important; width: 100% !important; }
+      * { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+      table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important; }
+      img { border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; display: block; }
+      a { text-decoration: underline; }
+      button { cursor: pointer; }
+
+      /* ===== THEME: bright warm-white, matches weekend.com ===== */
+      .bg-page { background-color: #ECECDB; }
+      .text-primary { color: #0A0322 !important; }
+      .text-secondary { color: #6B6980 !important; }
+      .link-brand { color: #2145F7 !important; }
+      .link-brand:hover { color: #4A64F0 !important; }
+      .link-brand:active { color: #17359C !important; }
+
+      .primary-button {
+        background-color: #0A0322; border: 0; border-radius: 99999px; color: #F3F4F1 !important;
+        display: inline-block; font-family: "WeekendRepro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        font-size: 18px; font-weight: 500; line-height: 48px; text-align: center; text-decoration: none;
+        padding: 0 24px; margin: 0; box-shadow: 0 4px 10px rgba(10, 3, 34, 0.12); min-width: auto; mso-line-height-rule: exactly;
+      }
+      .primary-button:hover { background-color: #241C3B; }
+      .primary-button:active { background-color: #000000; }
+
+      .font-base { font-family: "WeekendRepro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+      .h1 { font-family: "WeekendRepro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-weight: 700; font-size: 36px; line-height: 1.3; margin: 0; }
+      .h3 { font-family: "WeekendRepro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-weight: 700; font-size: 22px; line-height: 1.3; margin: 0; }
+      .h5 { font-family: "WeekendRepro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-weight: 700; font-size: 18px; line-height: 1.2; margin: 0; }
+      .body-copy { font-family: "WeekendRepro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-weight: 400; font-size: 16px; line-height: 1.44; margin: 0; }
+      .eyebrow { font-family: "WeekendRepro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-weight: 700; font-size: 13px; line-height: 1; letter-spacing: 1.2px; text-transform: uppercase; margin: 0; }
+      .legal { font-family: "WeekendRepro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-weight: 500; font-size: 14px; line-height: 1.44; margin: 0; }
+
+      .container { max-width: 600px; width: 100%; }
+      .wrapper-pad { padding: 24px 0 0; }
+      .px-24 { padding-left: 24px; padding-right: 24px; }
+      .py-12 { padding-top: 12px; padding-bottom: 12px; }
+      .pt-4 { padding-top: 4px; }
+      .pt-8 { padding-top: 8px; } .pb-8 { padding-bottom: 8px; }
+      .pt-16 { padding-top: 16px; } .pb-16 { padding-bottom: 16px; }
+      .pt-24 { padding-top: 24px; } .pb-24 { padding-bottom: 24px; }
+      .pb-32 { padding-bottom: 32px; }
+      .pr-16 { padding-right: 16px; }
+      .mb-8 { margin-bottom: 8px; } .mb-16 { margin-bottom: 16px; } .mt-8 { margin-top: 8px; }
+      .left { text-align: left; }
+
+      .feature-chip { background: #0A0322; border-radius: 12px; }
+      .game-tile { width: 100%; height: auto; border-radius: 12px; display: block; }
+      .tile-border { border-radius: 15px; padding: 3px; background: linear-gradient(135deg, #2145F7, #D373B3, #FB7928, #FFDA0A); box-shadow: 0 4px 12px rgba(10,3,34,0.14); }
+      .tile-cell { width: 50%; }
+
+      .footer-links a { font-family: "WeekendRepro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; font-weight: 500; font-size: 16px; line-height: 1.2; text-decoration: none; line-height: 40px; color: #0A0322 !important; }
+      .footer-links a:hover { color: #6B6980 !important; }
+      .footer-links a:active { color: #6B6980 !important; }
+      .divider { color: #a9a7b8; padding: 0 10px; }
+      .social-chip { background: #0A0322; border-radius: 8px; width: 36px; height: 36px; text-align: center; vertical-align: middle; }
+      .social-icon { display: block; margin: 0 auto; }
+      .platform-pill { background: #0A0322; border-radius: 99999px; }
+
+      @media screen and (max-width: 600px) {
+        .stack { display: block !important; width: 100% !important; }
+        .stat-td { display: block !important; width: 100% !important; padding: 0 0 12px 0 !important; }
+        .stat-card { height: auto !important; }
+        .tile-cell { display: block !important; width: 100% !important; padding: 0 0 12px 0 !important; }
+        .px-24 { padding-left: 16px !important; padding-right: 16px !important; }
+        .hero-pad { padding: 32px 20px !important; }
+      }
+    </style>
+  </head>
+  <body class="bg-page" style="margin: 0; padding: 0">    
+    <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+      See why families keep coming back to Weekend.
+    </div>
+    <table cellpadding="0" cellspacing="0" class="bg-page" role="presentation" width="100%">      
+      <tr>        
+        <td class="wrapper-pad">          
+          <table align="center" cellpadding="0" cellspacing="0" class="container" role="presentation" style="overflow: hidden">            
+<!-- Top banner: dimensional navy wordmark, built for light backgrounds -->
+            <tr>              
+              <td align="center" class="px-24" style="padding-top: 28px; padding-bottom: 28px;">                
+                <img alt="Weekend" src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/weekend-dneal.png" style="width: 168px; height: auto; max-width: 600px; margin: 0 auto;" width="168"/>
+              </td>
+            </tr>
+<!-- Hero -->
+            <tr>              
+              <td class="hero-pad" style="background:#D373B3; padding: 40px 24px; border-radius: 16px;">                
+                <p class="eyebrow font-base" style="color:#0A0322;opacity:0.7;">
+                  Join the party
+                </p>
+                <h1 class="h1 font-base left" style="color:#0A0322; margin-top:8px;">
+                  Game night is a click away.
+                </h1>
+                <p class="body-copy font-base left" style="color:#0A0322; opacity:0.85; margin-top:10px;">
+                  Still thinking about it? See what other Weekend players have to say!
+                </p>
+              </td>
+            </tr>
+<!-- Social proof stats -->
+            <tr>              
+              <td class="px-24 pt-24 pb-8">                
+                <table cellpadding="0" cellspacing="0" role="presentation" width="100%">                  
+                  <tr>                    
+                    <td class="stat-td" style="width:50%; vertical-align:top; padding:0 8px 16px 0;">                      
+                      <div class="stat-card" style="background:#FFDA0A; border-radius:16px; padding:24px 20px; height:120px; box-sizing:border-box;">                        
+                        <p class="font-base" style="font-weight:700; font-size:40px; line-height:1; color:#0A0322; margin:0;">
+                          400K+
+                        </p>
+                        <p class="body-copy font-base" style="color:#0A0322; opacity:0.75; margin-top:8px;">
+                          players on Weekend
+                        </p>
+                      </div>
+                    </td>
+                    <td class="stat-td" style="width:50%; vertical-align:top; padding:0 0 16px 8px;">                      
+                      <div class="stat-card" style="background:#BCE107; border-radius:16px; padding:24px 20px; height:120px; box-sizing:border-box;">                        
+                        <p class="font-base" style="font-weight:700; font-size:40px; line-height:1; color:#0A0322; margin:0;">
+                          4.5★
+                        </p>
+                        <p class="body-copy font-base" style="color:#0A0322; opacity:0.75; margin-top:8px;">
+                          rated on App Store
+                        </p>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+<!-- CTA below stats -->
+            <tr>              
+              <td align="center" class="px-24 pt-8 pb-16">                
+                <a class="primary-button" href="https://pair.weekend.com/payment?utm_source=klaviyo&amp;utm_medium=lifecycle&amp;utm_campaign=WebCheckOut_CartAbandonment_Phase3&amp;utm_content={{ flow.name }}&amp;utm_term={{ message.subject }}">Start your free trial</a>
+              </td>
+            </tr>
+<!-- Reviews -->
+            <tr>              
+              <td class="px-24 pb-16 pt-16">                
+                <h3 class="h3 font-base text-primary left">
+                  What players are saying.
+                </h3>
+              </td>
+            </tr>
+            <tr>              
+              <td class="px-24 pb-8">                
+                <div class="review-card" style="background:#F3F4F1; border-radius:16px; padding:20px 22px; margin-bottom:12px;">                  
+                  <p class="font-base" style="color:#FB7928; font-size:18px; letter-spacing:2px; margin:0;">
+                    ★★★★★
+                  </p>
+                  <p class="body-copy font-base text-primary left" style="margin-top:8px;">
+                    "Love this app so much my husband and I sat in opposite rooms just to play together"
+                  </p>
+                  <p class="legal font-base text-secondary left" style="margin-top:8px;">
+                    &mdash; gameygamerson415
+                  </p>
+                </div>
+                <div class="review-card" style="background:#F3F4F1; border-radius:16px; padding:20px 22px; margin-bottom:12px;">                  
+                  <p class="font-base" style="color:#FB7928; font-size:18px; letter-spacing:2px; margin:0;">
+                    ★★★★★
+                  </p>
+                  <p class="body-copy font-base text-primary left" style="margin-top:8px;">
+                    "Big problem. It's addicting! Always &ldquo;One More Round&rdquo;"
+                  </p>
+                  <p class="legal font-base text-secondary left" style="margin-top:8px;">
+                    &mdash; Tara
+                  </p>
+                </div>
+                <div class="review-card" style="background:#F3F4F1; border-radius:16px; padding:20px 22px; margin-bottom:12px;">                  
+                  <p class="font-base" style="color:#FB7928; font-size:18px; letter-spacing:2px; margin:0;">
+                    ★★★★★
+                  </p>
+                  <p class="body-copy font-base text-primary left" style="margin-top:8px;">
+                    "Using your voice to play these games feels really natural. My family and I enjoy it!"
+                  </p>
+                  <p class="legal font-base text-secondary left" style="margin-top:8px;">
+                    &mdash; DS365
+                  </p>
+                </div>
+              </td>
+            </tr>
+<!-- Where to find us -->
+            <tr>              
+              <td class="px-24 pb-16 pt-8">                
+                <h3 class="h3 font-base text-primary left">
+                  Where to find us.
+                </h3>
+                <p class="body-copy font-base text-secondary left pt-4">
+                  Already on the streaming device in your living room. Just search "Weekend."
+                </p>
+              </td>
+            </tr>
+            <tr>              
+              <td align="center" class="px-24 pb-24">                
+                <table align="center" cellpadding="0" cellspacing="0" role="presentation">                  
+                  <tr>                    
+                    <td style="vertical-align:middle;">                      
+                      <img alt="" height="56" src="https://d3k81ch9hvuctc.cloudfront.net/company/S7f2pi/images/images_tile-roku254f.png" style="display:block; width:56px; height:56px; border-radius:14px;" width="56"/>
+                    </td>
+                    <td style="width:48px;"></td>
+                    <td style="vertical-align:middle;">                      
+                      <img alt="" height="56" src="https://d3k81ch9hvuctc.cloudfront.net/company/S7f2pi/images/images_tile-firetv80291.png" style="display:block; width:56px; height:56px; border-radius:14px;" width="56"/>
+                    </td>
+                    <td style="width:48px;"></td>
+                    <td style="vertical-align:middle;">                      
+                      <img alt="" height="56" src="https://d3k81ch9hvuctc.cloudfront.net/company/S7f2pi/images/images_tile-samsung37deb.png" style="display:block; width:56px; height:56px; border-radius:14px;" width="56"/>
+                    </td>
+                    <td style="width:48px;"></td>
+                    <td style="vertical-align:middle;">                      
+                      <img alt="" height="56" src="https://d3k81ch9hvuctc.cloudfront.net/company/S7f2pi/images/images_tile-lga4e57.png" style="display:block; width:56px; height:56px; border-radius:14px;" width="56"/>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>              
+              <td align="center" class="px-24 pt-8 pb-24">                
+                <a class="primary-button" href="https://pair.weekend.com/payment?utm_source=klaviyo&amp;utm_medium=lifecycle&amp;utm_campaign=WebCheckOut_CartAbandonment_Phase3&amp;utm_content={{ flow.name }}&amp;utm_term={{ message.subject }}">Start your free trial</a>
+              </td>
+            </tr>
+<!-- Footer -->
+            <tr>              
+              <td class="px-24 pb-32 pt-16" style="border-top: 1px solid rgba(10,3,34,0.12);">                
+                <table cellpadding="0" cellspacing="0" role="presentation" width="100%">                  
+                  <tr>                    
+                    <td align="center" class="stack pb-12" style="padding-top:16px;">                      
+                      <a href="https://www.weekend.com">
+                        <img alt="Weekend" src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/weekend-dneal.png" style="width: 132px; height: auto; margin: 0 auto;" width="132"/>
+</a>
+                    </td>
+                  </tr>
+                  <tr>                    
+                    <td align="center" class="stack footer-links font-base pb-8">                      
+                      <a href="https://pair.weekend.com/account">My Account</a>
+                      <span class="divider">|</span>
+                      <a href="mailto:support@weekend.com">Support</a>
+                    </td>
+                  </tr>
+                  <tr>                    
+                    <td align="center" class="stack pb-16">                      
+                      <table align="center" cellpadding="0" cellspacing="0" class="social" role="presentation">                        
+                        <tr>                          
+                          <td class="social-chip" width="36" height="36" align="center" valign="middle" style="width: 36px; height: 36px; text-align: center; vertical-align: middle;">
+                            <a aria-label="Instagram" href="https://www.instagram.com/weekend.hq">
+                              <img alt="Instagram" class="social-icon" height="20" src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/icon_instagram.png" width="20" style="display: block; margin: 0 auto;"/>
+                            </a>
+                          </td>
+                          <td class="social-gap" style="width: 12px; font-size: 0; line-height: 0;">&nbsp;</td>
+                          <td class="social-chip" width="36" height="36" align="center" valign="middle" style="width: 36px; height: 36px; text-align: center; vertical-align: middle;">
+                            <a aria-label="TikTok" href="https://www.tiktok.com/@weekendhq">
+                              <img alt="TikTok" class="social-icon" height="20" src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/icon_tiktok.png" width="20" style="display: block; margin: 0 auto;"/>
+                            </a>
+                          </td>
+                          <td class="social-gap" style="width: 12px; font-size: 0; line-height: 0;">&nbsp;</td>
+                          <td class="social-chip" width="36" height="36" align="center" valign="middle" style="width: 36px; height: 36px; text-align: center; vertical-align: middle;">
+                            <a aria-label="X" href="https://x.com/weekendhq">
+                              <img alt="X" class="social-icon" height="20" src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/icon_x.png" width="20" style="display: block; margin: 0 auto;"/>
+                            </a>
+                          </td>
+                          <td class="social-gap" style="width: 12px; font-size: 0; line-height: 0;">&nbsp;</td>
+                          <td class="social-chip" width="36" height="36" align="center" valign="middle" style="width: 36px; height: 36px; text-align: center; vertical-align: middle;">
+                            <a aria-label="YouTube" href="https://www.youtube.com/@weekend_hq">
+                              <img alt="YouTube" class="social-icon" height="20" src="https://volley-assets-public.s3.us-east-1.amazonaws.com/hub-experiment-overrides/emails/icon_youtube.png" width="20" style="display: block; margin: 0 auto;"/>
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>                    
+                    <td align="center" class="stack footer-links font-base legal text-secondary">                      
+                      <p>
+                        {% unsubscribe %} from our email list
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
